@@ -13,7 +13,7 @@ export default function Home() {
   const [items, setItems] = useState([]);
 
   useEffect(() => {
-    axios.get('http://localhost:3000/all-items')
+    axios.get('https://foodstroe-backend.onrender.com/all-items')
       .then(items => setItems(items.data))
       .catch(err => console.log(err)
       )

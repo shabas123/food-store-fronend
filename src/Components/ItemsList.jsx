@@ -24,7 +24,7 @@ export default function ItemsList() {
   };
 
   useEffect(() => {
-    axios.get('http://localhost:3000/all-items')
+    axios.get('https://foodstroe-backend.onrender.com/all-items')
       .then(items => setItems(items.data))
       .catch(err => console.log(err));
   }, [removeStatus, editResponse]);
