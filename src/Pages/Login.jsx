@@ -79,11 +79,12 @@ export default function Login() {
   }
   return (
     <>
- <div className="container-fluid">
-        <div className="row align-items-center">
-          <div className="col-md-1"></div>
-          <div className="col-md-4">
-            <h2 className="text-center mb-4 text-dark">Welcome Back!</h2>            <div>
+ <div className="container-container-fluid min-vh-100 d-flex align-items-center justify-content-center">
+        <div className="row w-100">
+
+          <div className="col-12 col-md-6 d-flex flex-column align-items-center justify-content-center p-4">
+            <h2 className="text-center mb-4 text-dark">Welcome Back!</h2>            
+            <div className="w-100" style={{ maxWidth: '400px' }}>
               <input required type="text" placeholder='Email' value={userDetails.email} onChange={(e) => setUserdetails({ ...userDetails, email: e.target.value })} className='form-control mb-3 rounded-pill p-2 "' />
               <input required type="password" placeholder='Password' value={userDetails.password} onChange={(e) => setUserdetails({ ...userDetails, password: e.target.value })} className='form-control mb-3 rounded-pill p-2 ' />
             </div>

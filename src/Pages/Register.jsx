@@ -56,22 +56,16 @@ export default function Register({ register }) {
   }
   return (
     <>
-      <div className='bg'>
-
-
+      <div className='bg min-vh- d-flex flex-column"'>
         <div className="container mt-4">
           <div className="row mt-4">
             <div className="col-md-4"></div>
             <div className="col-md-6 border-white rounded  mt-4">
               <h3 className='text-black text-center'>Register</h3>
-
             </div>
-
           </div>
         </div>
       </div>
-
-
       <div className="container-fluid">
         <div className="row align-items-center">
           <div className="col-md-1"></div>
