@@ -128,17 +128,17 @@ const AppNavbar = () => {
 
   return (
     <>
-      <nav className="navbar navbar-expand-lg bg-black shadow-sm px-4 mb-4" style={{ height: "120px" }}>
+      <nav className="navbar navbar-expand-lg bg-black shadow-sm px-4 mb-4 " style={{ height: "120px" }}>
         <div className="container-fluid">
-          <a className="navbar-brand d-flex align-items-center gap-2" href="/" style={{ fontSize: "40px", color: "white", fontFamily: "cursive", padding: "20px" }}>Chicako <span style={{ color: "yellow", fontFamily: "fantasy" }}>  Burg</span>
+          <a className="navbar-brand d-flex align-items-center gap-2 " href="/" style={{ fontSize: "40px", color: "white", fontFamily: "cursive", padding: "20px" }}>Chicako <span style={{ color: "yellow", fontFamily: "fantasy" }}>  Burg</span>
             <img style={{ height: "120px" }} src="https://media1.giphy.com/media/fAWL3ANw4NbreH9TGB/200.webp?cid=ecf05e47bnkz4z8j7oizywqhco22q8vvg688xd2isx70mxxd&ep=v1_gifs_related&rid=200.webp&ct=g" alt="" className="img-fluid" />
 
           </a>
-          <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <button className="navbar-toggler mb-5" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
           </button>
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul className="navbar-nav ms-auto align-items-center gap-3">
+            <ul className="navbar-nav ms-auto align-items-center gap-3 mb-5">
             { isLogin && <li className="nav-item  ">
                 <a style={{ color: "white", fontSize: "30px" }} className="nav-link  nav-hover me-2" href="/cart">
                   cart {cartstate.cartItems.length}
@@ -228,3 +228,4 @@ const AppNavbar = () => {
 };
 
 export default AppNavbar;
+
