@@ -59,7 +59,7 @@ export default function Register({ register }) {
       <div className='bg'>
 
 
-        <div className="container mt-4">
+        <div className="container mt-4" >
           <div className="row mt-4">
             <div className="col-md-4"></div>
             <div className="col-md-6 border-white rounded  mt-4">
@@ -72,7 +72,7 @@ export default function Register({ register }) {
       </div>
 
 
-      <div className="container-fluid">
+      <div className="container-fluid"  style={{marginTop:"150px", alignContent:"center" }}>
         <div className="row align-items-center">
           <div className="col-md-1"></div>
           <div className="col-md-4">
