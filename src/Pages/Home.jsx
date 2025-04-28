@@ -75,17 +75,17 @@ export default function Home() {
       </div>
       </a>}
      {loggedInUser && <a href="/drink">
-//       <div className="row bg">
-//         <div className="posters">
-//           <img className='poster' alt='poster' src='https://pod2.brvn.vn/media/2023/09/7up1.webp' />
-//           <img className='poster' alt='poster' src='https://wallpapercave.com/wp/wp7947935.jpg' />
-//           <img className='poster' alt='poster' src='https://images8.alphacoders.com/397/thumb-1920-397307.jpg' />
-//           <img className='poster' alt='poster' src='https://wallpapercave.com/wp/wp3631978.jpg' />
-//           <img className='poster' alt='poster' src='https://rare-gallery.com/uploads/posts/841890-Drinks-Lime-Mojito-Black-background-Two-Highball-glass.jpg' />
-//           <img className='poster' alt='poster' src='https://images2.alphacoders.com/876/876244.jpg' />
+     <div className="row bg">
+        <div className="posters">
+          <img className='poster' alt='poster' src='https://pod2.brvn.vn/media/2023/09/7up1.webp' />
+          <img className='poster' alt='poster' src='https://wallpapercave.com/wp/wp7947935.jpg' />
+          <img className='poster' alt='poster' src='https://images8.alphacoders.com/397/thumb-1920-397307.jpg' />
+          <img className='poster' alt='poster' src='https://wallpapercave.com/wp/wp3631978.jpg' />
+          <img className='poster' alt='poster' src='https://rare-gallery.com/uploads/posts/841890-Drinks-Lime-Mojito-Black-background-Two-Highball-glass.jpg' />
+         <img className='poster' alt='poster' src='https://images2.alphacoders.com/876/876244.jpg' />
 
-//         </div>
-//       </div>
+         </div>
+       </div>
       </a>}
 
 { loggedInUser &&     <h2 id="section1" className='text-center mt-4'>  Today's Special </h2>
