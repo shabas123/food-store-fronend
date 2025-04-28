@@ -79,8 +79,8 @@ export default function Login() {
   }
   return (
     <>
- <div className="container-fluid">
-        <div className="row align-items-center">
+ <div className="container-fluid" >
+        <div className="row align-items-center" style={{marginTop:"200px", }}>
           <div className="col-md-1"></div>
           <div className="col-md-4">
             <h2 className="text-center mb-4 text-dark">Welcome Back!</h2>            <div>
@@ -118,3 +118,4 @@ export default function Login() {
     </>
   )
 }
+
