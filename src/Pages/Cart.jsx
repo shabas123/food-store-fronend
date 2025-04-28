@@ -45,9 +45,9 @@ function Cart() {
         }
     };
     return (
-        <div className='cart-container container-fluid mt-5 '>
-            <div className="row justify-content-center p-2 p-md-3">
-                <div className="col-12 col-md-8 col-lg-6 order-summary mb-3 mb-lg-0 pe-lg-3">
+        <div className='cart-container container-fluid mt-5 ' >
+            <div className="row justify-content-center p-2 p-md-3" >
+                <div className="col-12 col-md-8 col-lg-6 order-summary mb-3 mb-lg-0 pe-lg-3 "style={{marginTop:"80px"}}>
                     <h2 className="order-header">Order Summary</h2>
 
                     <div className="cart-items-container">
@@ -103,7 +103,7 @@ function Cart() {
                     </div>
                 </div>
 
-                <div className="col-12 col-md-6 col-lg-4 order-summary ms-3" style={{alignItems:"center"}}>
+                <div className="col-12 col-md-6 col-lg-4 order-summary ms-3" style={{alignItems:"center" }}>
                     <h2 className="order-header">Payment Method</h2>
                     <div className="payment-summary">
                         <h3 className="subtotal">SubTotal: ₹{subtotal}</h3>
