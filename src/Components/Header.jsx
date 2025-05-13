@@ -130,7 +130,7 @@ const AppNavbar = () => {
     <>
       <nav className="navbar navbar-expand-lg bg-black shadow-sm px-4 mb-4 " style={{ height: "120px" }}>
         <div className="container-fluid">
-          <a className="navbar-brand d-flex align-items-center gap-2 " href="/" style={{ fontSize: "40px", color: "white", fontFamily: "cursive", padding: "20px" }}>Chicako <span style={{ color: "yellow", fontFamily: "fantasy" }}>  Burg</span>
+          <a className="navbar-brand d-flex align-items-center gap-2 " href="/" style={{ fontSize: "10px", color: "white", fontFamily: "cursive" }}>Chicako <span style={{ color: "yellow", fontFamily: "fantasy" }}>  Burg</span>
             <img style={{ height: "120px" }} src="https://media1.giphy.com/media/fAWL3ANw4NbreH9TGB/200.webp?cid=ecf05e47bnkz4z8j7oizywqhco22q8vvg688xd2isx70mxxd&ep=v1_gifs_related&rid=200.webp&ct=g" alt="" className="img-fluid" />
 
           </a>
