@@ -50,7 +50,7 @@ export default function Home() {
               src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExczh3aTNoNTd2OHVscXJyYTlsMHVsdmJlbXNta2ZnejlwdWNnd3hwdyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/5XLPWTWfj7h6M/giphy.gif"
               alt="Delicious Burger" className="img-fluid mt-5" />
               :
-          <img src="https://purepng.com/public/uploads/large/purepng.com-chefcheftrained-professional-cookfood-preparationkitchenchefsexperienced-1421526669538jccuo.png" alt="" className='img-fluid'  style={{ maxHeight: '70vh', objectFit: 'cover' }} />
+          <Link to={"/login"} style={{textDecoration:"none", fontFamily:"fantasy"}} > <img src="https://purepng.com/public/uploads/large/purepng.com-chefcheftrained-professional-cookfood-preparationkitchenchefsexperienced-1421526669538jccuo.png" alt="" className='img-fluid'  style={{ maxHeight: '70vh', objectFit: 'cover' }} /></Link> 
 
             }
           </div>
