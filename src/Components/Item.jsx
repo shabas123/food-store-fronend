@@ -35,7 +35,7 @@ export default function Item({item}) {
          <Card style={{ width: '100%', borderRadius: "60px" }} className='mt-4'></Card>
         <div onClick={handleShow}>
           
-          <Card.Img variant="top" src={item.image} style={{ width: "100%", height: "220px", objectFit: "cover"}} />
+          <Card.Img variant="top" src={item.image} style={{ width: "100%", height: "220px", objectFit: "cover",borderRadius: "60px" }} />
 
           <Card.Title>{item.name}</Card.Title>
           <div className="position-absolute top-0 end-0 bg-success text-white px-2 py-1 m-2 rounded-pill large">
