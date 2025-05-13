@@ -32,7 +32,7 @@ export default function Item({item}) {
       <div className='shadow-lg p-3 mb-5 bg-black rounded'
       key={item.id}>
         <div className="position-relative">
-         <Card style={{ width: '100%', borderRadius: "40px" }} className='mt-4'></Card>
+         <Card style={{ width: '100%', borderRadius: "60px" }} className='mt-4'></Card>
         <div onClick={handleShow}>
           
           <Card.Img variant="top" src={item.image} style={{ width: "100%", height: "220px", objectFit: "cover"}} />
