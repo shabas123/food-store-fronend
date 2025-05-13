@@ -34,7 +34,7 @@ export default function Home() {
      <div className="container-fluid d-flex align-items-center justify-content-center min-vh-100 bg" style={{marginTop:"80px"}}>
         <div className="row align-items-center" style={{textAlign:"center"}}>
           <div className="col-md-6 " style={{ padding: "30px" }}>
-        {  loggedInUser ?  <h2 className="fw-bold text-warning " > Welcome {loggedInUser} </h2>
+        {  loggedInUser ?  <h2 className="fw-bold text-success " > Welcome {loggedInUser} </h2>
         :
        <Link to={"/login"} style={{textDecoration:"none", fontFamily:"fantasy"}} ><h2>!!!  Touch me And Get It !!!  </h2></Link>
         
