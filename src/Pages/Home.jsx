@@ -36,7 +36,7 @@ export default function Home() {
           <div className="col-md-6 " style={{ padding: "30px" }}>
         {  loggedInUser ?  <h2 className="fw-bold text-success " > Welcome {loggedInUser} </h2>
         :
-       <Link to={"/login"} style={{textDecoration:"none", fontFamily:"fantasy"}} ><h2>!!!  Touch me And Get It !!!  </h2></Link>
+       <Link to={"/login"} style={{textDecoration:"none", fontFamily:"fantasy"}} ><h2>!!  Touch And Get It !!  </h2></Link>
         
       }
            {loggedInUser && <div><h1 className="fw-bold text-danger">Delicious food <br />always <span style={{ fontFamily: 'fantasy' }}>tells a story</span> </h1>
