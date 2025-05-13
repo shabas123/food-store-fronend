@@ -72,7 +72,6 @@ export default function Login() {
         }
       } else  
         (result.status == 405); {
-          toast.warning(`Wrong details`)
         }
       
     }
