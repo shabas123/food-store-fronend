@@ -128,7 +128,7 @@ const AppNavbar = () => {
 
   return (
     <>
-      <nav className="navbar navbar-expand-lg bg-black shadow-sm px-4 mb-4 " style={{ height: "120px" }}>
+      <nav className="navbar navbar-expand-lg bg-black shadow-sm px-4 mb-4 ">
         <div className="container-fluid">
           <a className="navbar-brand d-flex align-items-center gap-2 " href="/" style={{ fontSize: "30px", color: "white", fontFamily: "cursive" }}>Chicako <span style={{ color: "yellow", fontFamily: "fantasy" }}>  Burg</span>
             <img style={{ height: "120px" }} src="https://media1.giphy.com/media/fAWL3ANw4NbreH9TGB/200.webp?cid=ecf05e47bnkz4z8j7oizywqhco22q8vvg688xd2isx70mxxd&ep=v1_gifs_related&rid=200.webp&ct=g" alt="" className="img-fluid" />
@@ -139,12 +139,15 @@ const AppNavbar = () => {
           </button>
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav ms-auto align-items-center gap-3 mb-5">
-            { isLogin && <li className="nav-item  ">
-                <a style={{ color: "white", fontSize: "30px" }} className="nav-link  nav-hover me-2" href="/cart">
-                  cart {cartstate.cartItems.length}
-                </a>
-              </li>}
-
+             {isLogin && (
+                <li className="nav-item">
+                  <a className="btn btn-outline-light position-relative fs-5" href="/cart">
+                    Cart
+                    <span className="badge bg-warning text-dark position-absolute top-0 start-100 translate-middle rounded-pill">
+                      {cartstate.cartItems.length}
+                    </span>
+                  </a>
+                </li>
              {isLogin && <li className="nav-item me-2 ">
                 <button onClick={handleShow} className="btn btn-outline-warning text-white  fs-5  d-flex align-items-center gap-2">
                   <FontAwesomeIcon icon={faPerson} />
