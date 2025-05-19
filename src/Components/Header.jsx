@@ -138,16 +138,12 @@ const AppNavbar = () => {
             <span className="navbar-toggler-icon"></span>
           </button>
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul className="navbar-nav ms-auto align-items-center gap-3 mb-5">
-             {isLogin && 
-                <li className="nav-item">
-                  <a className="btn btn-outline-light position-relative fs-5" href="/cart">
-                    Cart
-                    <span className="badge bg-warning text-dark position-absolute top-0 start-100 translate-middle rounded-pill">
-                      {cartstate.cartItems.length}
-                    </span>
-                  </a>
-                </li>
+           <ul className="navbar-nav ms-auto align-items-center gap-3 mb-5">
+            { isLogin && <li className="nav-item  ">
+                <a style={{ color: "white", fontSize: "30px" }} className="nav-link  nav-hover me-2" href="/cart">
+                  cart {cartstate.cartItems.length}
+                </a>
+              </li>}
              {isLogin && <li className="nav-item me-2 ">
                 <button onClick={handleShow} className="btn btn-outline-warning text-white  fs-5  d-flex align-items-center gap-2">
                   <FontAwesomeIcon icon={faPerson} />
