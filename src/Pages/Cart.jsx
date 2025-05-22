@@ -109,17 +109,13 @@ function Cart() {
                         <h3 className="subtotal ms-3 d-none d-md-block">SubTotal: ₹{subtotal}</h3>
                         <h3 className="subtotal ms-3 d-none d-md-block">To Pay: ₹{subtotal}</h3>
                     </div>
-                    <div className="container-fluid">
-                        <div className="col-6 col-md-12 ">
-                                <button  className='order-button w-100 mt-3' disabled={cartItems.length === 0} onClick={handlePlaceOrder}>
-                                   ₹{subtotal}  Place order <Order subtotal={subtotal} />
-                                </button>
-
-
-
-
+                   <div class="d-flex justify-content-between align-items-center p-3 bg-white border">
+                        <div>
+                            <div class="fs-4 fw-bold text-black">₹{subtotal} <i class="bi bi-info-circle"></i></div>
                         </div>
+                        <button class="order-button w-50 mt-3" disabled={cartItems.length === 0} onClick={handlePlaceOrder}>Place Order  <Order subtotal={subtotal} /> </button>
                     </div>
+
 
                 </div>
             </div>
