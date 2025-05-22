@@ -72,7 +72,7 @@ export default function Register({ register }) {
       </div>
 
 
-      <div className="container-fluid"  style={{marginTop:"150px", alignContent:"center" }}>
+      <div className="container-fluid" >
         <div className="row align-items-center">
           <div className="col-md-1"></div>
           <div className="col-md-4">
