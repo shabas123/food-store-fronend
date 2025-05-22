@@ -83,4 +83,14 @@
     color: #cc0e24;
     text-decoration: underline;
   }
-  
+  /* Sticky order box for mobile */
+@media (max-width: 767px) {
+  .order-summary.ms-3 {
+    position: sticky;
+    bottom: 0;
+    background: #fff;
+    padding: 1rem;
+    box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+  }
+}
