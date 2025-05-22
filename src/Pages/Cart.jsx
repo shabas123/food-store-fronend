@@ -109,7 +109,7 @@ function Cart() {
                         <h3 className="subtotal ms-3 d-none d-md-block">SubTotal: ₹{subtotal}</h3>
                         <h3 className="subtotal ms-3 d-none d-md-block">To Pay: ₹{subtotal}</h3>
                     </div>
-                   <div class="d-flex justify-content-between align-items-center p-3 bg-white border">
+                   <div class="d-flex justify-content-between align-items-center p-3 bg-white">
                         <div>
                             <div class="fs-4 fw-bold text-black">₹{subtotal} <i class="bi bi-info-circle"></i></div>
                         </div>
