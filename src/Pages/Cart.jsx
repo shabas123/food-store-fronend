@@ -45,7 +45,7 @@ function Cart() {
         }
     };
     return (
-        <div className='cart-container container-fluid mt-5 ' >
+        <div className='cart-container container-fluid ' >
             <div className="row justify-content-center p-2 p-md-3" >
                 <div className="col-12 col-md-8 col-lg-6 order-summary mb-3 mb-lg-0 pe-lg-3 " style={{ marginTop: "80px" }}>
                     <h2 className="order-header">Order Summary</h2>
@@ -103,19 +103,18 @@ function Cart() {
                     </div>
                 </div>
 
-                <div className="col-12 col-md-6 col-lg-4 order-summary ms-3 ms-3 " style={{ alignItems: "center" }}>
+                <div className="col-12 col-md-6 col-lg-4 order-summary ms " style={{ alignItems: "center", margin:"20px" }}>
                     <h2 className="order-header ms-3 d-none d-md-block">Payment Method</h2>
                     <div className="payment-summary d:none">
                         <h3 className="subtotal ms-3 d-none d-md-block">SubTotal: ₹{subtotal}</h3>
                         <h3 className="subtotal ms-3 d-none d-md-block">To Pay: ₹{subtotal}</h3>
                     </div>
-                   <div class="d-flex justify-content-between align-items-center p-3 bg-white">
+                    <div class="d-flex justify-content-between align-items-center p-3 bg-white ">
                         <div>
-                            <div class="fs-4 fw-bold text-black">₹{subtotal} <i class="bi bi-info-circle"></i></div>
+                            <div class="fs-4 fw-bold text-black">Total: ₹{subtotal} <i class="bi bi-info-circle"></i></div>
                         </div>
                         <button class="order-button w-50 mt-3" disabled={cartItems.length === 0} onClick={handlePlaceOrder}>Place Order  <Order subtotal={subtotal} /> </button>
                     </div>
-
 
                 </div>
             </div>
