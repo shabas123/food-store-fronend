@@ -85,7 +85,7 @@
   }
   /* Sticky order box for mobile */
 @media (max-width: 767px) {
-  .order-summary.ms-3 {
+  .order-summary.ms {
     position: sticky;
     bottom: 0;
     background: #fff;
