@@ -69,7 +69,7 @@ function Cart() {
                                                 <span className="quantity-label">Quantity: </span>
                                                 <div className="quantity-buttons">
                                                     <button
-                                                        className="quantity-button btn border"
+                                                        className="quantity-button btn"
                                                         onClick={() => dispatch(addToCart(item, item.quantity - 1, item.varient))}
                                                         aria-label=""
                                                     >
