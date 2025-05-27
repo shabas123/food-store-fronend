@@ -31,7 +31,7 @@ export default function Home() {
   return (
     <>
 
-     <div className="container-fluid d-flex align-items-center justify-content-center min-vh-100 bg" style={{marginTop:"80px"}}>
+     <div className="container-fluid d-flex align-items-center justify-content-center bg">
         <div className="row align-items-center" style={{textAlign:"center"}}>
           <div className="col-md-6 " style={{ padding: "30px" }}>
         {  loggedInUser ?  <h2 className="fw-bold text-success " > Welcome {loggedInUser} </h2>
