@@ -25,7 +25,7 @@ export default function Register({ register }) {
       const result = await registerAPI(userDetails)
       console.log(result);
       if (result.status == 200) {
-      alert(`Registred successfully`)
+       toast.success(`Registred successfully`)
         setUserdetails({
           username: "",
           email: "",
