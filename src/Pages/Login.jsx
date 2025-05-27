@@ -36,7 +36,9 @@ export default function Login() {
         navigate('/login')
       } else if (result.status == 406) {
         alert(result.response.data)
-      } 
+      } else {
+        toast.wrong(`Somthing went wrong`)
+      }
     }
 
   }
@@ -68,9 +70,8 @@ export default function Login() {
         navigate('/');
         
         }
-      } else  
-        (result.status == 405); {
-           toast.warning(`Wrong details`)
+      } else if  (result.status == 405){
+          toast.warning(`Wrong details`)
         }
       
     }
@@ -78,7 +79,7 @@ export default function Login() {
   return (
     <>
  <div className="container-fluid" >
-        <div className="row align-items-center" >
+        <div className="row align-items-center">
           <div className="col-md-1"></div>
           <div className="col-md-4">
             <h2 className="text-center mb-4 text-dark">Welcome Back!</h2>            <div>
@@ -116,4 +117,3 @@ export default function Login() {
     </>
   )
 }
-
