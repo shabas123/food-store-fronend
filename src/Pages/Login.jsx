@@ -36,9 +36,7 @@ export default function Login() {
         navigate('/login')
       } else if (result.status == 406) {
         alert(result.response.data)
-      } else {
-        toast.wrong(`Somthing went wrong`)
-      }
+      } 
     }
 
   }
