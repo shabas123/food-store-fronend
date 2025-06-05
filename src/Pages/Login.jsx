@@ -5,6 +5,7 @@ import { loginAPI } from '../local/api';
 import { Bounce, toast, ToastContainer } from 'react-toastify';
 export default function Login() {
   const navigate = useNavigate()
+    const [showPassword, setShowPassword] = useState(false);
   const [userDetails, setUserdetails] = useState({
     username: "",
     email: "",
@@ -76,6 +77,7 @@ export default function Login() {
       
     }
   }
+  
   return (
     <>
  <div className="container-fluid" >
@@ -84,7 +86,7 @@ export default function Login() {
           <div className="col-md-4">
             <h2 className="text-center mb-4 text-dark">Welcome Back!</h2>            <div>
               <input style={{color:"black", fontWeight:"bold"}} required type="text" placeholder='Email' value={userDetails.email} onChange={(e) => setUserdetails({ ...userDetails, email: e.target.value })} className="form-control mb-3 rounded-pill p-2 " />
-              <input style={{color:"black", fontWeight:"bold"}}  required type="password" placeholder='Password' value={userDetails.password} onChange={(e) => setUserdetails({ ...userDetails, password: e.target.value })} className='form-control mb-3 rounded-pill p-2 ' />
+              <input style={{color:"black", fontWeight:"bold"}} type={showPassword ? "text" : "password"} placeholder='Password' value={userDetails.password} onChange={(e) => setUserdetails({ ...userDetails, password: e.target.value })} className='form-control mb-3 rounded-pill p-2 ' />
             </div>
             <button onClick={handleLogin} type='button' className='btn btn-danger w-100 rounded-pill py-2 fw-bold shadow'>Login</button>
             <a href="./register" style={{ textDecoration: 'none' }}> <h6 className=' text-center  text-primary  mt-2 fw-bold'> <span className='text-white'>Don't have an account?</span> Sign up</h6></a>
@@ -117,4 +119,3 @@ export default function Login() {
     </>
   )
 }
-
