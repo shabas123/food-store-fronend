@@ -80,9 +80,9 @@ export default function Register({ register }) {
 
             <form >
               <div>
-                <input required type="text" placeholder='name' value={userDetails.username} onChange={(e) => setUserdetails({ ...userDetails, username: e.target.value })} className='form-control mb-3 rounded-pill p-2' />
-                <input required type="text" placeholder='email' value={userDetails.email} onChange={(e) => setUserdetails({ ...userDetails, email: e.target.value })} className='form-control mb-3 rounded-pill p-2 ' />
-                <input required type="password" placeholder='password' value={userDetails.password} onChange={(e) => setUserdetails({ ...userDetails, password: e.target.value })} className='form-control mb-3 rounded-pill p-2 ' />
+                <input style={{color:"black", fontWeight:"bold"}} required type="text" placeholder='name' value={userDetails.username} onChange={(e) => setUserdetails({ ...userDetails, username: e.target.value })} className='form-control mb-3 rounded-pill p-2' />
+                <input style={{color:"black", fontWeight:"bold"}} required type="text" placeholder='email' value={userDetails.email} onChange={(e) => setUserdetails({ ...userDetails, email: e.target.value })} className='form-control mb-3 rounded-pill p-2 ' />
+                <input style={{color:"black", fontWeight:"bold"}} required type="password" placeholder='password' value={userDetails.password} onChange={(e) => setUserdetails({ ...userDetails, password: e.target.value })} className='form-control mb-3 rounded-pill p-2 ' />
               </div>
               {!register ? <div>
                 <button onClick={handleRegister} type='button' className=' w-100 btn btn-danger  w-100 rounded-pill'>Register</button>
