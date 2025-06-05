@@ -86,7 +86,7 @@ export default function Register({ register }) {
                 <input style={{fontWeight:"bold"}} required type={showPassword ? "text" : "password"} placeholder='password' value={userDetails.password} onChange={(e) => setUserdetails({ ...userDetails, password: e.target.value })} className='form-control mb-3 rounded-pill p-2 ' />
               </div>
               {!register ? <div>
-                <button onClick={handleRegister} type='button' className=' w-100 btn btn-danger  w-100 rounded-pill'>Register</button>
+                <button onClick={handleRegister} type='button' className=' w-100 btn btn-danger  w-100 rounded-pill'>Sign Up</button>
               </div>
                 :
                 <div>
