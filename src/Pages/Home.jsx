@@ -58,10 +58,9 @@ export default function Home() {
       </div>
 
      
-  { loggedInUser &&   <h2 className='text-center'>Our Menu</h2>}
-      
-{   loggedInUser &&    <h4 className='text-center'>Where Every Bite Hits the Spot</h4>
-}     {loggedInUser && <a href="#section1">
+   <h2 className='text-center'>Our Menu</h2>
+      <h4 className='text-center'>Where Every Bite Hits the Spot</h4>   
+      <a href="#section1">
         <div className='row bg'>
 
         <div className='posters'>
@@ -74,8 +73,8 @@ export default function Home() {
            <img className='poster' alt='poster' src='https://img.freepik.com/premium-photo/butter-naan-panner-butter-masala-indian-dish_651966-38.jpg' />
          </div>
        </div>
-      </a>}
-     {loggedInUser && <a href="/drink">
+      </a>
+     <a href="/drink">
        <div className="row bg">
          <div className="posters">
            <img className='poster' alt='poster' src='https://rare-gallery.com/uploads/posts/841890-Drinks-Lime-Mojito-Black-background-Two-Highball-glass.jpg' />
@@ -88,7 +87,7 @@ export default function Home() {
 
          </div>
        </div>
-      </a>}
+      </a>
 
 { loggedInUser &&     <h2 id="section1" className='text-center mt-4'>  Today's Special </h2>
 }     {loggedInUser && <div className="row justify-content-center bg"  >
